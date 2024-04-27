@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Update system
-#apt update  && apt upgrade -y
+apt update  && apt upgrade -y
 
 # Install dependencies
 
