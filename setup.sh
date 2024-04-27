@@ -8,6 +8,7 @@ apt update  && apt upgrade -y
 PKGS=(
     'chromium-browser'
     'unclutter'
+    'xdotool'
     'ufw'
     'sed'
     'ssh'
