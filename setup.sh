@@ -1,7 +1,6 @@
 
-
+# Current directory
 DIR=$PWD
-
 
 
 # Copy necessary files

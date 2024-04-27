@@ -1,21 +1,16 @@
 @lxpanel --profile LXDE-pi
 @pcmanfm --desktop --profile LXDE-pi
-#@xscreensaver -no-splash
-point-rpi
 
+# Disable screensave
 @xset s off
 @xset -dpms
 @xset s noblank
 
 
-#@chromium-browser --no-startup-window
-
-#@sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/pi/.config/chromium/Default/Preferences
 
 
-
+# Run script
 @/home/pi/.start.sh
-#@chromium-browser --noerrordialogs --start-fullscreen --start-maximized  https://exposure.shodan.io/#/FI
 
-#@chromium-browser --start-fullscreen --start-maximized https://exposure.shodan.io/#/FI
+# Hide cursor after 10 seconds
 @unclutter -idle 5.0
