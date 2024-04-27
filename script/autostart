@@ -1,0 +1,18 @@
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+#@xscreensaver -no-splash
+point-rpi
+
+@xset s off
+
+#@chromium-browser --no-startup-window
+
+#@sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/pi/.config/chromium/Default/Preferences
+
+
+
+@/home/pi/.start.sh
+#@chromium-browser --noerrordialogs --start-fullscreen --start-maximized  https://exposure.shodan.io/#/FI
+
+#@chromium-browser --start-fullscreen --start-maximized https://exposure.shodan.io/#/FI
+@unclutter -idle 5.0
