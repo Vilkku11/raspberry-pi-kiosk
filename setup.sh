@@ -34,7 +34,7 @@ systemctl enable ssh
 systemctl start ssh
 
 # Current directory
-DIR=$PWD
+
 
 # Copy necessary files
 echo Copying autostart
@@ -45,9 +45,9 @@ then
 fi
 
 
-cp $DIR/script/autostart /home/$SUDO_USER/.config/lxsession/LXDE-pi/autostart
+cp $PWD/script/autostart /home/$SUDO_USER/.config/lxsession/LXDE-pi/autostart
 echo Copying start.sh
-cp $DIR/script/start.sh /home/.start.sh
+cp $PWD/script/start.sh /home/.start.sh
 chmod +x /home/.start.sh
 
 echo "Done!"
