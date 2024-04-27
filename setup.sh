@@ -38,6 +38,13 @@ DIR=$PWD
 
 # Copy necessary files
 echo Copying autostart
+
+if [ ! -d "/home/$SUDO_USER/.config/lxsession" ]
+then
+ cp -r /etc/xdg/lxsession /home/$SUDO_USER/.config/
+fi
+
+
 cp $DIR/script/autostart /home/$SUDO_USER/.config/lxsession/LXDE-pi/autostart
 echo Copying start.sh
 cp $DIR/script/start.sh /home/.start.sh
