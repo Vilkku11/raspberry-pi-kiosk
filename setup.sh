@@ -1,9 +1,32 @@
+#!/bin/bash
 
 # Update system
-apt update  && apt upgrade -y
+#apt update  && apt upgrade -y
 
 # Install dependencies
-apt install chromium -y
+
+PKGS=(
+    'chromium'
+    'unclutter'
+    'ufw'
+    'sed'
+    'ssh'
+)
+
+for PKG in "${PKGS[@]}"; do
+    echo "Installing: ${PKG}"
+    apt install "$PKG" -y
+done
+
+
+# Firewall
+ufw enable
+systemctl enable ufw.service
+systemctl start ufw.service
+
+ufw default deny
+ufw limit ssh
+
 
 
 # Current directory
@@ -17,4 +40,3 @@ cp $DIR/script/start.sh /home/$SUDO_USER/.start.sh
 chmod +x /home/$SUDO_USER/.start.sh
 
 echo "Done!"
-
