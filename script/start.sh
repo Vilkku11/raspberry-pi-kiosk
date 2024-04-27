@@ -10,11 +10,11 @@ set -m
 
   sleep 30
 
-  xdotool type limited
+  xdotool type username
   sleep 1
   xdotool key Tab
   sleep 1
-  xdotool type passu1212
+  xdotool type password
   sleep 2
   xdotool key Tab
   sleep 1
