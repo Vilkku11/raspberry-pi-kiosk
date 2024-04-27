@@ -9,6 +9,7 @@ PKGS=(
     'chromium-browser'
     'unclutter'
     'xdotool'
+    'unattended-upgrades'
     'ufw'
     'sed'
     'ssh'
