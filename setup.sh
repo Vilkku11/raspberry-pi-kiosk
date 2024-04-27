@@ -6,7 +6,7 @@ apt update  && apt upgrade -y
 # Install dependencies
 
 PKGS=(
-    'chromium'
+    'chromium-browser'
     'unclutter'
     'ufw'
     'sed'
