@@ -27,7 +27,9 @@ systemctl start ufw.service
 ufw default deny
 ufw limit ssh
 
-
+# Open ssh service
+systemctl enable ssh
+systemctl start ssh
 
 # Current directory
 DIR=$PWD
@@ -36,7 +38,7 @@ DIR=$PWD
 echo Copying autostart
 cp $DIR/script/autostart /home/$SUDO_USER/.config/lxsession/LXDE-pi/autostart
 echo Copying start.sh
-cp $DIR/script/start.sh /home/$SUDO_USER/.start.sh
+cp $DIR/script/start.sh /home/.start.sh
 chmod +x /home/$SUDO_USER/.start.sh
 
 echo "Done!"

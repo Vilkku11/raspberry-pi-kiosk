@@ -10,7 +10,7 @@
 
 
 # Run script
-@/home/pi/.start.sh
+@/home/.start.sh
 
 # Hide cursor after 10 seconds
 @unclutter -idle 5.0
