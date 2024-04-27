@@ -4,7 +4,7 @@ sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/$SUDO_USER/.config/
 
 # Start Chromium browser
 set -m
-/usr/bin/chromium-browser --noerrordialogs --kiosk https://demo.netbox.dev/login &
+/usr/bin/chromium-browser --noerrordialogs --kiosk --incognito https://demo.netbox.dev/login &
 
 
 
